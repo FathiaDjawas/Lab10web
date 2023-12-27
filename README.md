@@ -1,36 +1,43 @@
-# Lab10Web
+# lab10_php_oop
 
-Nama : Fathia Wardah S.Djawas
+<table>
+  <tr>
+    <th colspan="2">DATA MAHASISWA</th>
+  </tr>
+  <tr>
+    <td>Nama</td>
+    <td>Fathia Wardah S.Djawas</td>
+  </tr>
+  <tr>
+    <td>NIM</td>
+    <td>312210196</td>
+  </tr>
+  <tr>
+    <td>Kelas</td>
+    <td>TI.22.A1</td>
+  </tr>
+</table>
 
-NIM : 312210196
-
-Kelas : TI.22.A1
-
-Mata Kuliah : Pemrograman Mobile 1
-
-
-## DAFTAR ISI <br>
-| No | Description | Link |
-|-----|------|-----|
-|1|Instruksi Praktikum|[Click Here](#instruksi-praktikum)|
-|2|Langkah-langkah Praktikum|[Click Here](#langkah-langkah-praktikum)|
-|3|Pertanyaan dan Tugas|[Click Here](#pertanyaan-dan-tugas)|
-
+## Tujuan
+1. Mahasiswa mampu memahami konsep dasar OOP.
+2. Mahasiswa mampu memahami konsep dasar Class dan Object.
+3. Mahasaswa mampu membuat program OOP sederhana menggunakan PHP.
+   
 ## Instruksi Praktikum
 1. Persiapkan text editor misalnya VSCode.
-2. Buat folder baru dengan nama `lab10_php_oop` pada docroot webserver (htdocs).
+2. Buat folder baru dengan nama lab10_php_oop pada docroot webserver (htdocs)
 3. Ikuti langkah-langkah praktikum yang akan dijelaskan berikutnya.
 
 ## Langkah-langkah Praktikum
-1. Buat file php baru dengan nama `mobil.php`
+Buat file baru dengan nama mobil.php
 ```
 <?php
 /**
- * Program sederhana pendefinisian class dan pemanggilan class.
- */
+* Program sederhana pendefinisian class dan pemanggilan class.
+**/
 
- class Mobil
- {
+class Mobil
+{
     private $warna;
     private $merk;
     private $harga;
@@ -46,32 +53,31 @@ Mata Kuliah : Pemrograman Mobile 1
     {
         $this->warna = $warnaBaru;
     }
-
     public function tampilWarna ()
     {
-        echo "Warna mobilnya : ". $this->warna;
+        echo "Warna mobilnya : " . $this->warna;
     }
- }
+}
 
- // membuat objek mobil
- $a = new Mobil();
- $b = new Mobil();
+// membuat objek mobil
+$a = new Mobil();
+$b = new Mobil();
 
- // memanggil objek
- echo "<b>Mobil pertama</b><br>";
- $a->tampilWarna();
- echo "<br>Mobil pertama ganti warna<br>";
- $a->gantiWarna("Merah");
- $a->tampilWarna();
+// memanggil objek
+echo "<b>Mobil pertama</b><br>";
+$a->tampilWarna();
+echo "<br>Mobil pertama ganti warna<br>";
+$a->gantiWarna("Merah");
+$a->tampilWarna();
 
-
- // memanggil objek
- echo "<br><b>Mobil kedua</b><br>";
- $b->gantiWarna("Hijau");
- $b->tampilWarna();
- ?>
+// memanggil objek
+echo "<br><b>Mobil kedua</b><br>";
+$b->gantiWarna("Hijau");
+$b->tampilWarna();
+?>
 ```
-> Output :
+![Screenshot 2023-12-05 105146](https://github.com/aasnovita114/lab10_php_oop/assets/116045324/a2475cac-8ff1-4228-b384-c996c599e9c2)
+
 
 - **Class Library**
 Class Library merupakan pustaka kode program yang dapat digunakan bersama pada beberapa file yang berbeda (konsep modularisasi). Class library menyimpan fungsi-fungsi atau class object komponen untuk memudahkan dalam proses development aplikasi.
@@ -138,6 +144,9 @@ $form->displayForm();
 echo "</body></html>";
 ?>
 ```
+> Output :
+![Screenshot 2023-12-26 191958](https://github.com/FathiaDjawas/lab10_php_oop/assets/116045324/437db00f-a7ef-4f86-961f-8c7ec8df6b13)
+
 
 4. Buat file dengan nama `database.php`
 ```
@@ -245,15 +254,43 @@ class Database
 3. Membuat file `database.php`
    [database.php](lab10_tugas/database.php)
 
-4. Membuat file `formlibrary.php`
+5. Membuat file `formlibrary.php`
    [formlibrary.php](lab10_tugas/formlibrary.php)
 
-5. Konfigurasikan dengan praktikum sebelumnya
+7. Konfigurasikan dengan praktikum sebelumnya
    [index.php](lab10_tugas/index.php)
    [tambah.php](lab10_tugas/tambah.php)
    [ubah.php](lab10_tugas/ubah.php)
    [hapus.php](lab10_tugas/hapus.php)
 
-   
+-> **Output Tugas :**
+
+> - `Home.php`
+
+
+
+> - `About.php`
+![Screenshot 2023-12-26 192317](https://github.com/FathiaDjawas/lab10_php_oop/assets/116045324/3e2b369b-27fe-4d28-b258-ba84bca42d6e)
+
+
+> - `Kontak.php`
+![Screenshot 2023-12-26 193929](https://github.com/FathiaDjawas/lab10_php_oop/assets/116045324/8cbbadd5-f5dc-4c93-b0c3-ac46daa6491b)
+
+
+> - `tambah.php`
+![tambah](https://github.com/FathiaDjawas/lab10_php_oop/assets/116045324/0ef63832-65a3-4f1c-90af-ef485c587609)
+
+
+
+
+> - `ubah.php`
+![ubah](https://github.com/FathiaDjawas/lab10_php_oop/assets/116045324/55295803-9a9b-4c11-852e-aadf3f908ce6)
+
+
+
+
+> - `hapus.php`
+
+
 
 ## Selesai, Terima Kasih
